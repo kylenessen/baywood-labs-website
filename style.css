@@ -1,0 +1,137 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4em; /* Large text for the name */
+    font-weight: 300;
+    color: #000000;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.description p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 700px; /* Constrain width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-placeholder {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dddddd; /* Light border for the image */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: #f9f9f9; /* Light background if image is transparent or fails to load */
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background for contact section */
+    border-radius: 4px;
+}
+
+.contact h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 1em;
+}
+
+.contact a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #eeeeee; /* Separator line for footer */
+    font-size: 0.9em;
+    color: #555555; /* Lighter text for footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+    .description p {
+        font-size: 1em;
+    }
+    .contact h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    .description p {
+        font-size: 0.95em;
+    }
+    .contact h2 {
+        font-size: 1.3em;
+    }
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 0 10px;
+    }
+}
