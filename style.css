@@ -63,11 +63,14 @@ section {
 }
 
 .image-placeholder img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border: 1px solid #dddddd; /* Light border for the image */
     border-radius: 4px; /* Slightly rounded corners */
     background-color: #f9f9f9; /* Light background if image is transparent or fails to load */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact {
@@ -75,6 +78,9 @@ section {
     padding: 20px;
     background-color: #f4f4f4; /* Light grey background for contact section */
     border-radius: 4px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact h2 {
