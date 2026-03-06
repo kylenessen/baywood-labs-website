@@ -27,16 +27,34 @@ body {
 }
 
 header {
-    text-align: center;
     margin-bottom: 30px;
     padding: 20px 0;
 }
 
-header h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 4em; /* Large text for the name */
-    font-weight: 300;
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.header-logo {
+    height: 100px;
+    width: auto;
+}
+
+.header-line {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 3.5em;
+    font-weight: 400;
     color: #000000;
+    line-height: 1.1;
 }
 
 main {
@@ -113,8 +131,8 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2.8em;
+    .header-line {
+        font-size: 2.5em;
     }
     .description p {
         font-size: 1em;
@@ -125,8 +143,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 2.2em;
+    .header-line {
+        font-size: 1.8em;
     }
     .description p {
         font-size: 0.95em;
